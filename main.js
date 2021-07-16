@@ -18,7 +18,7 @@ let listBrick = [];
 
 function createlistBrick() {
 
-    for (let i = 0; i < 2; i++) {
+    for (let i = 0; i < 5; i++) {
         for (let j = 0; j < 9; j++) {
             // 50 = 25 (tọa độ x) + j * (do dai vien gach + khoang cach)
             let brick = new Brick(25 + j * (25 + 35), 25 + i * (10 + 10), 40, 10);
