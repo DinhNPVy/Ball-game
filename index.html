@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ball Game</title>
+    <style>
+        button {
+            width: 60px;
+            height: 17px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: x-small;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Hướng dẫn chơi:</h3>
+    <p>- Bấm <button>Play</button> hoặc phím <button>&#32;</button> để bắt đầu chơi <br>
+        - Dùng mũi tên sang trái <button>&larr;</button> để di chuyển thanh đỡ sang trái <br>
+        - Dùng mũi tên sang phải <button>&rarr;</button> để di chuyển thanh đỡ sang phải <br>
+        - Dùng mũi tên hướng lên <button>&uarr;</button> hoặc nút <button class='btn-tgt'>Tăng tốc</button> để tăng tốc
+        viên bi <br>
+        - Dùng mũi tên hướng xuống <button>&darr;</button> hoặc nút <button class='btn-tgt'>Giảm tốc</button> để giảm
+        tốc viên bi <br>
+        - Trò chơi kết thúc khi viên bi chạm đáy hình chữ nhật. <br>
+        Chúc bạn chơi vui vẻ!!!</p>
+    <canvas id='my-canvas' width="800" height="450" style="border: 1px solid red"></canvas><br>
+    <button id='btn-play' onclick='Play()'>Play</button>
+    <button id='btn-play' onclick='accleratePlus()' class='btn-tgt'>Tăng tốc</button>
+    <button id='btn-play' onclick='acclerateMinus()' class='btn-tgt'>Giảm tốc</button>
+    <script src='Circle.js'></script>
+    <script src='Rectangle.js'></script>
+    <script src='Brick.js'></script>
+    <script src='main.js'></script>
+</body>
+
+</html>
